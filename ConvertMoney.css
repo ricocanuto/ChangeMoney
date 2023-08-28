@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #8A51FC;
+    background-color: #772FD3;
 }
 
 main {
@@ -97,6 +97,9 @@ button {
 button:hover {
     opacity: 0.8;
 }
+button:active{
+    opacity: 0.6;
+}
 
 section {
     width: 327px;
@@ -118,7 +121,7 @@ section {
 }
 
 .arrow-img {
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 .currency {
@@ -131,7 +134,7 @@ section {
     color: #555555;
 }
 
-.currency-value {
+.currency-value, .currency-value-to-convert {
     color: #555555;
     font-family: 'Roboto';
     font-size: 20px;

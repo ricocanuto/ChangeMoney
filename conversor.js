@@ -10,12 +10,12 @@ function convertValues() {
 
     const convertedValue = inputCurrencyValue / dolarToday
 
-    currencyValueToConvert.innerHTML=new Intl.NumberFormat ("pt-BR", {
+    currencyValueToConvert.innerHTML = new Intl.NumberFormat ("pt-BR", {
         style: "currency",
         format: "BRL"
     }).format(inputCurrencyValue)
 
-    currencyValueConverted.innerHTML=new Intl.NumberFormat("en-US", {
+    currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
         style: "currency",
         format: "USD"
     }).format(convertedValue)

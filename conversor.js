@@ -3,6 +3,13 @@ const currencySelect = document.querySelector(".currency-select")
 
 function convertValues() {
     const inputCurrencyValue = document.querySelector(".input-currency").value
+    // Limpar a formatação da moeda (remover vírgulas e pontos)
+    const cleanedValue = inputCurrencyValue.replace(/[,.]/g, '');
+     // Verificar se é um número válido
+     if (isNaN(cleanedValue)) {
+        alert("Por favor, insira um valor numérico válido.");
+        return;
+    }
     const currencyValueToConvert = document.querySelector(".currency-value-to-convert")
     const currencyValueConverted = document.querySelector(".currency-value")
 
@@ -41,11 +48,11 @@ function convertValues() {
         currency: "BRL"
     }).format(inputCurrencyValue)
 
-
 }
 
+
 function changeCurrency() {
-    const currencyName = document.querySelector(".currency")
+    const currencyName = document.querySelector(".currency-name")
     const currencyImage = document.querySelector(".currency-img")
 
     if (currencySelect.value == "dolar") {
@@ -55,14 +62,20 @@ function changeCurrency() {
     if (currencySelect.value == "euro") {
         currencyName.innerHTML = "Euro"
         currencyImage.src="./Assets/logo-euro.png"
+        currencyImage.style.width = "52px"
+        currencyImage.style.heith = "52px"
     }
     if (currencySelect.value == "libra") {
         currencyName.innerHTML = "Libra"
         currencyImage.src="./Assets/logo-moeda-UK.png"
+        currencyImage.style.width = "52px"
+        currencyImage.style.heith = "52px"
     }
     if (currencySelect.value == "iene") {
         currencyName.innerHTML = "Iene";
         currencyImage.src="./Assets/logo-moeda-JPN.png";
+        currencyImage.style.width = "52px"
+        currencyImage.style.heith = "52px"
     }
     
     convertValues()

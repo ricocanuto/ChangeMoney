@@ -128,8 +128,8 @@ async function convertValues() {
 }
 
 function changeCurrency() {
-  const currency2 = document.getElementById(".currency-name-select-2") // mapeia o nome da segunda moeda
-  const currency1 = document.getElementById(".currency-name-select-1") // mapeia o nome da primeira moeda
+  const currency2 = document.getElementById("currency-name-select-2") // mapeia o nome da segunda moeda
+  const currency1 = document.getElementById("currency-name-select-1") // mapeia o nome da primeira moeda
   const imageFirstSelect = document.querySelector(".image-first-select") // mapeia a primeira imagem
   const currencyImage = document.querySelector(".currency-img") // mapeia a segunda imagem
 
@@ -165,14 +165,14 @@ function changeCurrency() {
   if (currencySelect.value == "libra") {
     currency2.innerHTML = "Libra"
     currencyImage.src = "./Assets/logo-moeda-UK.png"
-    currencyImage.style.width = "52px"
-    currencyImage.style.heith = "52px"
+    currencyImage.style.width = "72px"
+    currencyImage.style.heith = "72px"
   }
   if (firstSelect.value == "libra") {
     currency1.innerHTML = "Libra"
     imageFirstSelect.src = "./Assets/logo-moeda-UK.png"
-    imageFirstSelect.style.width = "52px"
-    imageFirstSelect.style.heith = "52px"
+    imageFirstSelect.style.width = "72px"
+    imageFirstSelect.style.heith = "72px"
   }
   if (currencySelect.value == "iene") {
     currency2.innerHTML = "Iene";

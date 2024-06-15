@@ -133,7 +133,9 @@ section {
     text-align: left;
     color: #555555;
 }
-
+.currency-img, .image-first-select {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
 .currency-value, .currency-value-to-convert {
     color: #555555;
     font-family: 'Roboto';
